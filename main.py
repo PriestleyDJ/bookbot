@@ -2,9 +2,12 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     word_count = get_word_count(text)
+    
+    print("__________Beginning Of Report__________")
     print(f"{word_count} words found in this book.")
     chars_dict = get_chars_dict(text)
     print_chars_dict(chars_dict)
+    print("__________End Of Report__________")
     
 def get_book_text(path):
     with open(path) as f:
