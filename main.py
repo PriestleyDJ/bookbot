@@ -6,12 +6,10 @@ def main():
     chars_dict = get_chars_dict(text)
     print_chars_dict(chars_dict)
     
-    
 def get_book_text(path):
     with open(path) as f:
         return f.read()
         
-    
 def get_word_count(text):
     words = text.split()
     return len(words)
